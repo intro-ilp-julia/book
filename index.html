@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to Integer Programming and Applications with Julia offers a practical, example-driven guide to integer programming, optimization applications, and Julia implementations.">
+    <meta name="keywords" content="integer programming, Julia, optimization, operations research, knapsack, traveling salesman, location problems, branch and bound">
+    <meta name="author" content="Luiz Antonio Nogueira Lorena, Luiz Henrique Nogueira Lorena, Antônio Augusto Chaves">
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#0f3a7d">
+    <meta property="og:title" content="Introduction to Integer Programming and Applications with Julia">
+    <meta property="og:description" content="A practical introduction to integer programming and optimization applications with Julia notebooks and examples.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luiz-lorena.github.io/intro-ilp-with-julia/">
+    <meta property="og:image" content="https://luiz-lorena.github.io/intro-ilp-with-julia/images/cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Introduction to Integer Programming and Applications with Julia">
+    <meta name="twitter:description" content="A practical introduction to integer programming and optimization applications with Julia notebooks and examples.">
+    <meta name="twitter:image" content="https://luiz-lorena.github.io/intro-ilp-with-julia/images/cover.png">
+    <link rel="canonical" href="https://luiz-lorena.github.io/intro-ilp-with-julia/">
+    <link rel="sitemap" type="application/xml" href="sitemap.xml">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Introduction to Integer Programming and Applications with Julia</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRWLVLKNZC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZRWLVLKNZC');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="nav-brand">📚 Introduction to Integer Programming and Applications with Julia</a>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#chapters">Chapters</a></li>
+            <li><a href="#authors">Authors</a></li>
+            <li><a href="#citation">Citation</a></li>
+            <li><a href="https://github.com/Luiz-Lorena/intro-ilp-with-julia" target="_blank" class="nav-cta">GitHub</a></li>
+            <li><button class="theme-toggle" id="themeToggle" title="Toggle dark mode">🌙</button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1>Introduction to Integer Programming and Applications with Julia</h1>
+                <p>Master Integer Linear Programming with practical examples and Jupyter notebooks</p>
+                <div class="hero-buttons">
+                    <a id="download-book" href="intro-ilp-julia.pdf" 
+                    download="intro-ilp-julia.pdf"
+                    class="btn btn-primary">Download Book</a>
+                    <a id="github-notebooks" href="https://github.com/Luiz-Lorena/intro-ilp-with-julia" class="btn btn-secondary">Access Notebooks</a>
+                </div>
+            <!-- <div class="about-panel"> -->
+            <div class="about-panel-card">
+                    <h3>What You Will Find</h3>
+                    <ul class="about-panel-list">
+                        <li><strong>Concepts:</strong> Foundations of integer programming</li>
+                        <li><strong>Applications:</strong> Real-world optimization problems</li>
+                        <li><strong>Practice:</strong> Notebooks and examples in Julia</li>
+                    </ul>
+                </div>
+            <!-- </div> -->
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-card">
+                    <img src="images/cover.png" alt="Book cover preview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapters Overview Section -->
+    <section id="chapters" class="chapters-section">
+        <h2>Book Chapters</h2>
+
+        <div class="chapter-part">
+            <!-- <h3>Chapter 1</h3> -->
+            <div class="chapters-grid">
+                <article class="chapter-card">
+                    <span class="chapter-tag">Chapter 1</span>
+                    <h3>Introduction to Integer Programming</h3>
+                    <p>Introduces the foundations of integer programming, including model formulation, decision variables, objective functions, and the role of integrality in optimization.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="chapter-part">
+            <h3>Part 1 - Applications</h3>
+            <div class="chapters-grid">
+                <article class="chapter-card">
+                    <span class="chapter-tag">Chapter 2</span>
+                    <h3>Knapsack Problems</h3>
+                    <p>Explores classic knapsack formulations and shows how binary and integer decisions can model resource allocation problems.</p>
+                    <ul>
+                        <li>Binary Knapsack Problem (BKP)</li>
+                        <li>Integer Knapsack Problem (IKP)</li>
+                    </ul>
+                </article>
+                <article class="chapter-card">
+                    <span class="chapter-tag">Chapter 3</span>
+                    <h3>Location Problems</h3>
+                    <p>Presents fundamental facility-location models and their use in deciding where to place services or resources efficiently.</p>
+                    <ul>
+                        <li>P-Median Problem (PMP)</li>
+                        <li>Set Covering Location Problem (SCLP)</li>
+                        <li>Maximal Coverage Location Problem (MCLP)</li>
+                    </ul>
+                </article>
+                <article class="chapter-card">
+                    <span class="chapter-tag">Chapter 4</span>
+                    <h3>Traveling Salesman Problem</h3>
+                    <p>Discusses one of the most well-known combinatorial optimization problems and compares different mathematical formulations and solution approaches.</p>
+                </article>
+                <article class="chapter-card">
+                    <span class="chapter-tag">Chapter 5</span>
+                    <h3>Graph Problems</h3>
+                    <p>Examines several important graph optimization problems and demonstrates how graph structures can be translated into integer programming models.</p>
+                    <ul>
+                        <li>Maximum Independent Set Problem (MISP)</li>
+                        <li>Vertex Covering Problem (VCP)</li>
+                        <li>Graph Coloring Problem (GCP)</li>
+                        <li>Graph Partitioning Problem (GPP)</li>
+                        <li>Clique Partitioning Problem (CPP)</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+
+        <div class="chapter-part">
+            <h3>Part 2 - Advanced Techniques</h3>
+            <div class="chapters-grid">
+                <article class="chapter-card">
+                    <span class="chapter-tag">Chapter 6</span>
+                    <h3>Column Generation</h3>
+                    <p>Introduces column generation as a decomposition technique for solving large-scale optimization models efficiently.</p>
+                    <ul>
+                        <li>One-dimensional Cutting Stock Problem (1D-CSP)</li>
+                        <li>P-Median Problem (PMP)</li>
+                    </ul>
+                </article>
+                <article class="chapter-card">
+                    <span class="chapter-tag">Chapter 7</span>
+                    <h3>Lagrangian Relaxation</h3>
+                    <p>Explains Lagrangian relaxation as a strategy for simplifying difficult models and deriving bounds for complex optimization problems.</p>
+                    <ul>
+                        <li>P-Median Problem (PMP)</li>
+                        <li>Maximum Independent Set Problem (MISP)</li>
+                        <li>Generalized Assignment Problem (GAP)</li>
+                    </ul>
+                </article>
+                <article class="chapter-card">
+                    <span class="chapter-tag">Chapter 8</span>
+                    <h3>Branch-and-Bound</h3>
+                    <p>Covers branch-and-bound methods and their role in systematically exploring solution spaces to find optimal integer solutions.</p>
+                    <ul>
+                        <li>Binary Knapsack Problem (BKP)</li>
+                        <li>Traveling Salesman Problem (TSP)</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+
+        <div class="chapter-part">
+            <h3>Appendix</h3>
+            <div class="chapters-grid">
+                <article class="chapter-card">
+                    <span class="chapter-tag">Appendix A</span>
+                    <h3>Julia Introduction</h3>
+                    <p>Provides a practical introduction to Julia and its use for implementing and solving optimization models.</p>
+                </article>
+                <article class="chapter-card">
+                    <span class="chapter-tag">Appendix B</span>
+                    <h3>Exercise Solutions</h3>
+                    <p>Offers complete solutions and explanations for the exercises presented throughout the book.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authors Section -->
+    <section id="authors" class="authors-section">
+        <h2>Authors</h2>
+        <div class="authors-grid">
+            <div class="author-card">
+                <div class="author-avatar">
+                    <img src="images/LuizANLorena.gif" alt="Luiz Antonio Nogueira Lorena">
+                </div>
+                <h3>Luiz Antonio Nogueira Lorena</h3>
+                <p>Brazilian researcher with an established career in the field of Operations Research. He worked for many years at the National Institute for Space Research (INPE), conducting research on optimization and computational methods for decision support. His academic career is distinguished by an extensive scientific publication record in national and international peer-reviewed journals, participation in research projects funded by agencies such as FAPESP, and the supervision of graduate students and researchers.</p>
+                <p>His primary areas of expertise include Operations Research, Combinatorial Optimization, Mathematical Programming, Metaheuristics, and Evolutionary Algorithms. His research has focused on applications in logistics, transportation, facility location, routing, scheduling, and geographic information systems, with particular emphasis on the development and application of optimization methods for complex decision-support problems in scientific and industrial settings.</p>
+                <div class="author-links">
+                    <a href="https://orcid.org/0000-0003-2043-1441" target="_blank" rel="noopener noreferrer" class="author-link orcid" title="ORCID">
+                        <img src="images/orcid_logo.svg" alt="ORCID" style="width: 20px; height: 20px;">
+                    </a>
+                    <a href="http://lattes.cnpq.br/7195702087655314" target="_blank" rel="noopener noreferrer" class="author-link lattes" title="Plataforma Lattes">
+                        <img src="images/lattes_logo.svg" alt="Lattes" style="width: 20px; height: 20px;">
+                    </a>
+                </div>
+            </div>
+            <div class="author-card">
+                <div class="author-avatar">
+                    <img src="images/LuizHNLorena.gif" alt="Luiz Henrique Nogueira Lorena">
+                </div>
+                <h3>Luiz Henrique Nogueira Lorena</h3>
+                <p>Brazilian researcher with Ph.D. in Computer Science with expertise in Optimization and Machine Learning.</p>
+                <p>His research interests include Combinatorial Optimization, Graph Theory, Exact Algorithms, Heuristics and Metaheuristics, Complex Networks, and Machine Learning. His work combines Operations Research and Artificial Intelligence methodologies to address complex computational problems with practical applications.</p>
+                <div class="author-links">
+                    <a href="https://orcid.org/0000-0002-7072-785X" target="_blank" rel="noopener noreferrer" class="author-link orcid" title="ORCID">
+                        <img src="images/orcid_logo.svg" alt="ORCID" style="width: 20px; height: 20px;">
+                    </a>
+                    <a href="http://lattes.cnpq.br/3719447000531011" target="_blank" rel="noopener noreferrer" class="author-link lattes" title="Plataforma Lattes">
+                        <img src="images/lattes_logo.svg" alt="Lattes" style="width: 20px; height: 20px;">
+                    </a>
+                </div>
+            </div>
+            <div class="author-card">
+                <div class="author-avatar">
+                    <img src="images/AntonioAChaves.gif" alt="Antônio Augusto Chaves">
+                </div>
+                <h3>Antônio Augusto Chaves</h3>
+                <p>Brazilian researcher and Associate Professor at the Institute of Science and Technology of the Federal University of São Paulo (UNIFESP). He has also held several academic leadership positions, including Coordinator of the Graduate Program in Operations Research (UNIFESP–ITA), Coordinator of Graduate Studies and Research at ICT/UNIFESP, and Editor-in-Chief of the journal Pesquisa Operacional (POPe).</p>
+                <p>His research expertise lies in Operations Research, Combinatorial Optimization, Mathematical Programming, Heuristics and Metaheuristics, Evolutionary Computation, and Artificial Intelligence for optimization. His work focuses on solving complex optimization problems arising in logistics, transportation, vehicle routing, scheduling, healthcare operations, production planning, and industrial engineering. He has led numerous FAPESP-funded research projects, supervised graduate students, and published extensively in leading international journals in Operations Research and Optimization, contributing to both methodological advances and practical applications in industrial and service systems.</p>
+                <div class="author-links">
+                    <a href="https://orcid.org/0000-0001-5767-6798" target="_blank" rel="noopener noreferrer" class="author-link orcid" title="ORCID">
+                        <img src="images/orcid_logo.svg" alt="ORCID" style="width: 20px; height: 20px;">
+                    </a>
+                    <a href="http://lattes.cnpq.br/4973949421738244" target="_blank" rel="noopener noreferrer" class="author-link lattes" title="Plataforma Lattes">
+                        <img src="images/lattes_logo.svg" alt="Lattes" style="width: 20px; height: 20px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Citation Section -->
+    <section id="citation" class="citation-section">
+        <h2>How to Cite</h2>
+        <p style="text-align: center; color: var(--text-light); margin-bottom: 1rem;">Please cite this book in your research using the following BibTeX entry:</p>
+        <div class="citation-box" id="citationBox">
+@book{LorenaEtAl2026,<br>
+&nbsp;&nbsp;title = {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Introduction to Integer Programming and Applications with Julia<br>
+&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;author = {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Lorena, Luiz Antonio Nogueira and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Lorena, Luiz Henrique Nogueira and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Chaves, Antônio Augusto<br>
+&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;year = {2026},<br>
+&nbsp;&nbsp;doi = {https://doi.org/10.5281/zenodo.21166419},<br>
+&nbsp;&nbsp;url = {https://github.com/Luiz-Lorena/intro-ilp-with-julia}<br>
+}
+        </div>
+        <div class="citation-actions">
+            <button class="citation-btn" id="copyBtn" title="Copy BibTeX to clipboard">📋 Copy BibTeX</button>
+            <a href="CITATION.bib" download="CITATION.bib" class="citation-btn" title="Download CITATION.bib file">⬇️ Download CITATION.bib</a>
+            <a href="https://doi.org/10.5281/zenodo.21166419" class="citation-btn" title="View on Zenodo">🔗 View on Zenodo</a>
+            <a href="https://github.com/Luiz-Lorena/intro-ilp-with-julia" class="citation-btn" title="GitHub Repository">🐙 GitHub Repository</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="badge">
+            <a href="https://doi.org/10.5281/zenodo.21166419" target="_blank" rel="noopener noreferrer">
+                <img
+                    src="https://zenodo.org/badge/DOI/10.5281/zenodo.21166419.svg"
+                    alt="DOI Badge"
+                    style="height: 40px;"
+                >
+            </a>
+        </div>
+        <div class="footer-links">
+            <a href="https://github.com/Luiz-Lorena/intro-ilp-with-julia" target="_blank">GitHub</a>
+            <a href="https://zenodo.org/records/21166419" target="_blank">Zenodo</a>
+            <a href="#citation">Citation</a>
+            <a href="https://github.com/Luiz-Lorena/intro-ilp-with-julia/blob/main/LICENSE" target="_blank">License (CC BY 4.0)</a>
+        </div>
+        <p>&copy; 2026 Lorena, Lorena, and Chaves. All rights reserved. Licensed under CC BY 4.0</p>
+    </footer>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Book",
+            "name": "Introduction to Integer Programming and Applications with Julia",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Luiz Antonio Nogueira Lorena"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Luiz Henrique Nogueira Lorena"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Antônio Augusto Chaves"
+                }
+            ],
+            "genre": "Operations Research",
+            "description": "A practical introduction to integer programming, optimization applications, and Julia implementations.",
+            "inLanguage": "en",
+            "url": "https://luiz-lorena.github.io/intro-ilp-with-julia/"
+        }
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
