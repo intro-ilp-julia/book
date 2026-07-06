@@ -101,8 +101,8 @@ copyBtn.addEventListener('click', () => {
     Chaves, Antônio Augusto
   },
   year = {2026},
-  doi = {https://doi.org/10.5281/zenodo.21166419},
-  url = {https://github.com/Luiz-Lorena/intro-ilp-with-julia}
+  doi = {https://doi.org/10.5281/zenodo.21227210},
+  url = {https://github.com/intro-ilp-julia/book/}
 }`;
 
     navigator.clipboard.writeText(bibtexText).then(() => {
